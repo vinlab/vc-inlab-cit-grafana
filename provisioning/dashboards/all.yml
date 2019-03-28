@@ -1,0 +1,34 @@
+- name: 'code-inventory'
+  org_id: 1
+  folder: 'Code Inventory'
+  type: 'file'
+  options:
+    folder: '/etc/grafana/provisioning/dashboards/code-inventory'
+
+- name: 'dashboards-activity'
+  org_id: 1
+  folder: 'Dashboards - Activity'
+  type: 'file'
+  options:
+    folder: '/etc/grafana/provisioning/dashboards/dashboards-activity'
+
+- name: 'dashboards-commits'
+  org_id: 1
+  folder: 'Dashboards - Commits'
+  type: 'file'
+  options:
+    folder: '/etc/grafana/provisioning/dashboards/dashboards-commits'
+
+- name: 'db-queries'
+  org_id: 1
+  folder: 'DB Queries'
+  type: 'file'
+  options:
+    folder: '/etc/grafana/provisioning/dashboards/db-queries'
+
+- name: 'db-querying-examples'
+  org_id: 1
+  folder: 'DB Querying Examples'
+  type: 'file'
+  options:
+    folder: '/etc/grafana/provisioning/dashboards/db-querying-examples'

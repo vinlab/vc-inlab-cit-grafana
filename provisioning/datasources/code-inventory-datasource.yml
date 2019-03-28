@@ -1,0 +1,19 @@
+datasources:
+- name: 'Code-Inventory'
+  id: 1
+  org_id: 1
+  type: 'postgres'
+  typeLogoUrl: 'public/app/plugins/datasource/postgres/img/postgresql_logo.svg'
+  access: 'proxy'
+  url: 'code_inventory_backend-postgresql:5432'
+  user: 'code_inventory_grafana'
+  database: 'code_inventory_backend'
+  basicAuth: false
+  is_default: true
+  read_only: false
+  json_data:
+      postgres_version: 1000
+      sslmode: 'disable'      
+  secure_json_data:
+      password: 'Casserole-747'
+      
