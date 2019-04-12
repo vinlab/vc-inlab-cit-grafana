@@ -1,6 +1,28 @@
-# Code Inventory Backend
+# Grafana image for Code Inventory
 
-## Documentation
+
+## Grafana Image Documentation
+
+Building it
+
+`docker-compose build`
+
+Running it
+
+`docker-compose up -d`
+
+With logs
+
+`docker-compose up`
+
+Stopping in
+
+`docker-compose down`
+
+Notes: in order to access data in Code Inventory data, Grafana image must be started as part of Code Inventory Backend app - simply running Grafana image standalone is not enough.
+
+
+## Code Inventory Documentation
 
 Backend API Document
 

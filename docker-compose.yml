@@ -1,0 +1,19 @@
+# Persist Grafana plugins separately
+# https://github.com/grafana/grafana-docker/issues/48
+version: '3.7'
+services:
+    code_inventory_backend-grafana:
+        build: '.'
+        image: vinlab/vc-inlab-cit-grafana
+        container_name: 'docker_code_inventory_backend-grafana_1' 
+        volumes:
+            - ~/.veracode/code-inventory/grafana/data:/var/lib/grafana
+            #- ~/.veracode/code-inventory/grafana/data/plugins:/var/lib/grafana/plugins
+            #- ~/.veracode/code-inventory/grafana/plugins:/var/lib/grafana/plugins
+            #- ~/.veracode/code-inventory/grafana/plugins:/etc/grafana/plugins
+        user: "104"
+        environment:
+            - GF_PATHS_CONFIG=/etc/grafana/grafana-config.ini
+        ports:
+            - 10110:3000
+        
