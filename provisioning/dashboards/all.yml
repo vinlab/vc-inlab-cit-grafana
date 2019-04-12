@@ -19,6 +19,13 @@
   options:
     folder: '/etc/grafana/provisioning/dashboards/dashboards-commits'
 
+- name: 'dashboards-sizings'
+  org_id: 1
+  folder: 'Dashboards - Sizings'
+  type: 'file'
+  options:
+    folder: '/etc/grafana/provisioning/dashboards/dashboards-sizings'
+
 - name: 'db-queries'
   org_id: 1
   folder: 'DB Queries'
